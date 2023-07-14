@@ -12,7 +12,7 @@ export default function Banner() {
 
         <p className={styles.paragrafo}>
           Boas vindas ao meu site pessoal! Eu sou Gabriel Lopes. FreeLancer 
-          de Front-end. Aqui você pode ver algo sobre mim e conhecer meu
+          de Front-end. Aqui conhecer um pouco do  meu
           trabalho. Espero que goste.
         </p>
       </div>

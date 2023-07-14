@@ -4,10 +4,14 @@ import SobreMim from "./pages/SobreMim";
 import Menu from './componentes/Menu'
 import Rodape from "componentes/Rodape";
 import PaginaPadrao from "componentes/PaginaPadrao";
+import Post from "pages/Post";
+import NotFound from "pages/NotFound";
+import ScrollToTop from "componentes/ScroolToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
 
       <Menu />
 
@@ -16,6 +20,8 @@ function AppRoutes() {
           <Route index element={<Home />} />
           <Route path="sobremim" element={<SobreMim />}/>
         </Route>
+
+        <Route path="posts/:id/*" element={<Post />}/>
 
         {/* 
         
@@ -33,7 +39,7 @@ function AppRoutes() {
 
         */}
         
-        <Route path="*" element={<div>ERRO: 404, Página não encontrada</div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Rodape />
